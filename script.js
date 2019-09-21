@@ -13,29 +13,30 @@
 //     isClosed = false;
 // console.log(isOpened && isClosed);
 
-var money = prompt("What is your budget per month?");
-//console.log(money);
+var money = prompt("What is your budget per month?", ''),
+    time = prompt("Put the date in format DD-MM-YY", '');  
 
-var time = prompt("Put the date in format DD-MM-YY");
-//console.log
 var appData = {
      budget: money,
      timeData: time,
-     expenses: q1,
-     //optionalExpenses: 
-     //income: 
-     savings: false,
-
+     expenses: {},
+     optionalExpenses: {}, 
+     income: [], 
+     savings: false
 } ;
 
-var q1 = prompt("What is a obligatory expenses for this month?");
-var q2 = prompt("How much will it cost?");
-var expenses = {
-    q1: q2,
-};
+var q1 = prompt("What is a obligatory expenses for this month?"),
+    q2 = prompt("How much will it cost?"),
+    q3 = prompt("What is a obligatory expenses for this month?"),
+    q4 = prompt("How much will it cost?");
+
+appData.expenses.q1 = q2;
+appData.expenses.q3 = q4;
+
+console.log(appData.expenses);
 
 alert("Your daily budget is " + (money / 30));
 
-console.log(appData.budget);
+
 
 

@@ -99,9 +99,10 @@ function checkSavings() {
             percent = +prompt("For what percent?");
         
         appData.monthIncome = save/100/12*percent;
-        alert("You monthly revenue from deposit: " + appData.monthIncome.toFixed(1));
+        alert("You monthly revenue from deposit: " + appData.monthIncome);
     }
 }
+// 100 10
 
 checkSavings();
 
